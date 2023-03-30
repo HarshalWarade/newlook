@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+*::selection {
+    background-color: #DFE1E4;
+    color: #000000;
+}
+
+*:root {
+    --firstBg: linear-gradient(90deg, #def7ff 1%, #cbd3ff 99%);
+}
+
+#basicNav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    gap: 3rem;
+}
+
+#basicNav div {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.logo img {
+    width: 50%;
+    height: auto;
+}
+
+p.mainText {
+    margin: 10px 0;
+}
+
+
+.gallery {
+    background: #EEE;
+}
+
+/* 
+.carousel-cell {
+    width: 66%;
+    height: 200px;
+    margin-right: 10px;
+    background: #8C8;
+    counter-increment: gallery-cell;
+}
+
+
+.carousel-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(gallery-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+} */
+
+
+
+.carousel-cell {
+    height: 45vh;
+    width: auto;
+}
+
+
+
+
+.carousel-cell img {
+    width: auto;
+    height: 45vh;
+    object-fit: cover;
+}
+
+.mainInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.commonSectionall {
+    margin: 0 100px;
+    margin-top: 120px;
+
+}
+
+.commonAll {
+    padding: 20px;
+}
+
+.left_panel {
+    padding: 40px;
+}
+
+.left_panel h2 {
+    margin-bottom: 29px;
+}
+.right_panel
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right_panel img {
+    width: 100%;
+    height: 100%;
+}
+.special_img_h img
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+}
+.links_refer {
+    margin: 40px 0;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+}
+
+.links_refer a {
+    text-decoration: none;
+    background-color: #717171;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 50px;
+    transition: 0.4s;
+}
+
+.links_refer a:hover {
+    background-color: #979797;
+    color: #fff;
+}
+
+.titleSecond {
+    text-align: center;
+}
+
+.second_Section {
+    padding: 30px;
+}
+
+.content_second {
+    margin: 30px 0;
+}
+
+.grid_imgBox {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+    margin: 50px 0;
+    border: 2px solid red;
+}
+
+.grid_imgBox img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
+}
+
+main figure img {
+    max-width: 100%
+}
+
+.list-unstyled li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: 0.4s;
+}
+
+.list-unstyled li a:hover {
+    color: red;
+}
+
+#footer {
+    /* background: linear-gradient(90deg,#b8b8b8 1%,#e7e7e7 99%); */
+    background: var(--firstBg);
+}
+
+
+
+
+.mainBg_refer {
+    background-color: #333;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainBg_refer h2 {
+    font-size: 45px;
+    color: #888;
+}
+
+#gridme_vent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.img_vent img {
+    height: 100%;
+    width: 100%;
+}
+
+.ventCom:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ventCom:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.section_first_vent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section_first_vent h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    width: 87vw;
+    background: var(--firstBg);
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+    #basicNav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+
+    #basicNav div {
+        padding: 0;
+    }
+
+    p.mainText {
+        margin: 0;
+    }
+}
+
+.carousel-cell img 
+{
+    margin: 0 30px;
+    border: 8px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#smellMe
+{
+    /* content: ''; */
+    background-color: #4dff25;
+    box-shadow: 0 0 10px #4dff25, 0 0 20px #4dff25;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin: 10px auto;
+}
+
+#Imag_Door_grids
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+#Imag_Door_grids img 
+{
+    border: 6px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+
+}
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+    #Imag_Door_grids
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.cats a
+{
+    background-color: rgb(0, 0, 0);
+}
+.cats a:hover
+{
+    background-color: #555;
+}
+.border-img
+{
+    border: 8px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
